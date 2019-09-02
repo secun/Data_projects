@@ -1,0 +1,38 @@
+install.packages("twitteR")
+install.packages("rtweet")
+install.packages("tidyquant")
+install.packages ("tidyverse")
+library("tidyverse")
+library("tidyquant")
+library("rtweet")
+library("twitteR")
+library("dplyr")
+library("ggplot2")
+
+#load credentials
+consumer_key <- "dNzadV3QlfF1hfAqey42ozUss"
+consumer_secret<- "3eJSe7UOjKOeypkYchRNb0pN0gEIdTp4qDqECyCKB28hNYfSH0"
+access_token <- "10124492-tN8oW8LGn1dHPnMdgSbSe3QXB8ZPkajWej7VSOKeD"
+access_secret <- "zfcFyzRpdySnaisTuOnFdCj7lHz2LoLoFXExF6isH5EAx"
+
+## access token method: create token and save it as an environment variable
+create_token(
+  app = "my_twitter_research_app",
+  consumer_key <- "dNzadV3QlfF1hfAqey42ozUss",
+  consumer_secret<- "3eJSe7UOjKOeypkYchRNb0pN0gEIdTp4qDqECyCKB28hNYfSH0",
+  access_token <- "10124492-tN8oW8LGn1dHPnMdgSbSe3QXB8ZPkajWej7VSOKeD",
+  access_secret <- "zfcFyzRpdySnaisTuOnFdCj7lHz2LoLoFXExF6isH5EAx")
+  
+#set up to authenticate
+setup_twitter_oauth(consumer_key ,consumer_secret,access_token ,access_secret)
+
+###################################################################################
+#parameters (keywork to be searched, user to be analyzed)
+keyword <- "secun"
+###################################################################################
+#######Retrieve tweets
+tweets <- userTimeline(keyword,n=3200,excludeReplies = TRUE)
+#Convert to df
+tweets.df <- twListToDF(tweets)
+
+
