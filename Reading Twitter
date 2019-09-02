@@ -18,10 +18,7 @@ access_secret <- "XXXX"
 ## access token method: create token and save it as an environment variable
 create_token(
   app = "my_twitter_research_app",
-  consumer_key <- "dNzadV3QlfF1hfAqey42ozUss",
-  consumer_secret<- "3eJSe7UOjKOeypkYchRNb0pN0gEIdTp4qDqECyCKB28hNYfSH0",
-  access_token <- "10124492-tN8oW8LGn1dHPnMdgSbSe3QXB8ZPkajWej7VSOKeD",
-  access_secret <- "zfcFyzRpdySnaisTuOnFdCj7lHz2LoLoFXExF6isH5EAx")
+  consumer_key ,  consumer_secret,   access_token ,   access_secret )
   
 #set up to authenticate
 setup_twitter_oauth(consumer_key ,consumer_secret,access_token ,access_secret)
