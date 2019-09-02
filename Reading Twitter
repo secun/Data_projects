@@ -10,10 +10,10 @@ library("dplyr")
 library("ggplot2")
 
 #load credentials
-consumer_key <- "dNzadV3QlfF1hfAqey42ozUss"
-consumer_secret<- "3eJSe7UOjKOeypkYchRNb0pN0gEIdTp4qDqECyCKB28hNYfSH0"
-access_token <- "10124492-tN8oW8LGn1dHPnMdgSbSe3QXB8ZPkajWej7VSOKeD"
-access_secret <- "zfcFyzRpdySnaisTuOnFdCj7lHz2LoLoFXExF6isH5EAx"
+consumer_key <- "XXX"
+consumer_secret<- "XXX"
+access_token <- "XXX"
+access_secret <- "XXXX"
 
 ## access token method: create token and save it as an environment variable
 create_token(
